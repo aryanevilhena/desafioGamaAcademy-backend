@@ -1,0 +1,122 @@
+{
+    "openapi": "3.0.0",
+
+    "info": {
+        "title": "API do Desafio Gama Academy - Aryane",
+        "description": "Essa é a API da parte do backend do Desafio",
+        "version": "0.0.1"
+    },
+
+    "servers": [
+        {
+            "url": "http://localhost:5000",
+            "description": "ambiente de desenvolvimento"
+        }
+    ],
+    "paths": {
+        "/register": {
+            "post": {
+                "summary": "Cadastro do candidato",
+                "description": "Rota de cadastro de usuário",
+                "tags": ["candidato"],
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "name": {
+                                        "type": "String"
+                                    },
+                                    "role": {
+                                        "type": "String"
+                                    },
+                                    "birthDate": {
+                                        "type": "String"
+                                    },
+                                    "maritalStatus": {
+                                        "type": "String"
+                                    },
+                                    "gender": {
+                                        "type": "String"
+                                    },
+                                    "cep": {
+                                        "type": "Number"
+                                    },
+                                    "address": {
+                                        "type": "String"
+                                    },
+                                    "district": {
+                                        "type": "String"
+                                    },
+                                    "city": {
+                                        "type": "String"
+                                    },
+                                    "number": {
+                                        "type": "Number"
+                                    },
+                                    "complement": {
+                                        "type": "String"
+                                    },
+                                    "phone1": {
+                                        "type": "Number"
+                                    },
+                                    "phone2": {
+                                        "type": "Number"
+                                    },
+                                    "cellPhone": {
+                                        "type": "Number"
+                                    },
+                                    "contact": {
+                                        "type": "String"
+                                    },
+                                    "email": {
+                                        "type": "String"
+                                    },
+                                    "rg": {
+                                        "type": "Number"
+                                    },
+                                    "cpf": {
+                                        "type": "Number"
+                                    },
+                                    "hasVehicle" : {
+                                        "type": "String"
+                                    },
+                                    "license": {
+                                        "type": "String"
+                                    }
+                                }
+                            },
+                            "examples": {
+                                "MyExample": {
+                                    "value": {
+                                        "name": "Aryane Vilhena",
+                                        "role": "Frontend Developer",
+                                        "birthDate": "30-05-1993",
+                                        "maritalStatus": "Single",
+                                        "gender": "Feminino Cis",
+                                        "cep": "10600100",
+                                        "address": "Travessa Barao do Triunfo",
+                                        "district": "Marco",
+                                        "city": "Belem",
+                                        "number": "04",
+                                        "complement": "B",
+                                        "phone1": "123456789",
+                                        "phone2": "987654321",
+                                        "cellPhone": "173947362",
+                                        "contact": "aryane_vilhena",
+                                        "email": "aryanevilhena@gmail.com",
+                                        "rg": "2983745",
+                                        "cpf": "09823475848",
+                                        "hasVehicle": "Nao",
+                                        "license": "CNH AB"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
